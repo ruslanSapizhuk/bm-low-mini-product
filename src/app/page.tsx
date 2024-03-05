@@ -39,23 +39,41 @@ export default function Home() {
             </div>
           </header>
           <section className={"mb-10"}>
-            <div className="md:basis-3/6 grow-1">
-            <span className="text-sm px-5 py-2 text-center normal-case font-light rounded bg-label inline-block">
-              Починай навчання у зручний час відразу після оплати
+            <div className="md:basis-3/6 grow-1 text-center">
+            <span className="text-sm px-5 py-2 text-center normal-case font-light rounded bg-label ">
+              Старт 14 березня
               </span>
-              <h2 className="text-3xl text-center mt-5 uppercase dark:text-black mb-10">
-                <b className={"font-bold"}>Iнтенсив по low</b> продажам міні продуктів
+              <h2 className="text-3xl mt-5 uppercase font-bold mb-10">
+                практикум по запуску міні продуктів на автопілоті 24/7
               </h2>
-              <p className="mb-5 dark:text-black md:pr-30 text-center">
-                <span className="font-bold">
-                  Опануй найпопулярніший та дієвий метод продажів у 2024 -
-                </span> створюй інфо та онлайн продукти, та відразу монетизуй їх без підписників, прогрівів та постійного ведення блогу
+              <p className="mb-5 dark:text-black md:pr-30">
+                Опануй найпопулярніший та дієвий метод у 2024 р.  залучення клієнтів та продажів 💸
               </p>
-              <p className="text-xl text-default md:text-2xl font-bold uppercase mb-14 max-w-lg text-center">
+              <p className="mb-5 text-center font-bold">
+                Створюй інфо продукти, марафони і відразу монетизуй їх 👇
+              </p>
+              <ul className="mb-5 text-left">
+                <li>
+                  🔹 без підписників
+                </li>
+                <li>
+                  🔹 без постійного ведення блогу
+                </li>
+                <li>
+                  🔹 без вебінарів
+                </li>
+                <li>
+                  🔹 без залучення команди на постійній основі
+                </li>
+                <li>
+                  🔹 без привʼязки до дати запуску, відразу продажі та видача матеріалу
+                </li>
+              </ul>
+              <p className="text-xl text-default md:text-2xl font-bold uppercase mb-5 max-w-lg text-center">
                 Встигни взяти участь зі знижкою 70%
               </p>
               <Link href="#pay">
-                <Button inverted className="w-full mb-10">
+                <Button inverted className="w-full">
                   Взяти участь
                 </Button>
               </Link>
@@ -230,12 +248,6 @@ export default function Home() {
                 <li>
                   Супровід куратора протягом всього інтенсиву
                 </li>
-                <li>
-                  Детальна інструкція для налашування таргету (підійде новачкам) 🎁
-                </li>
-                <li>
-                  Детальна інструкція для налашування таргету (підійде новачкам) 🎁
-                </li>
               </ol>
             </div>
           </section>
@@ -254,10 +266,24 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className={"bg-white rounded-3xl p-5"}>
-              <p>
+            <div className={"bg-white rounded-3xl p-5 text-center"}>
+              <p className={"mb-5"}>
                 🎁 При покупці інтенсиву сьогодні ти отримаєш файл з рекомендаціями щодо створення креативів, а також детальну інструкцію по налаштуванню таргету (підійте новачкам) у подарунок 🎁
               </p>
+              <p className={"mb-5 text-xl font-bold"}>
+                Тобто все разом коштує <br/>
+                <s>$300</s>
+              </p>
+              <p className={"mb-5 text-xl font-bold"}>
+                Але зараз:
+                <br/>
+                $49
+              </p>
+              <Link href={"https://secure.wayforpay.com/button/bc87e6fda40c2"}>
+                <Button className={"w-full"}>
+                  Приєднатися
+                </Button>
+              </Link>
             </div>
           </section>
           <section className="mb-10">
