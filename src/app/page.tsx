@@ -3,13 +3,6 @@ import Image from "next/image";
 import CountDown from "@/components/CountDown";
 import Link from "next/link";
 import pmLanaImage from "@/assets/PM-Lana.png";
-import Danone from "@/assets/Danone.png";
-import ActiveChat from "@/assets/activechat.png";
-import MSO from "@/assets/mso.png";
-import Kristina from "@/assets/Kristina.png";
-import Elina from "@/assets/elina.png";
-import Wispence from "@/assets/wispence.png";
-import Abinbel from "@/assets/abinbel.png";
 import IrynkaKhalus from "@/assets/IrynkaKhalus.png";
 import AnastasiyaMelnik from "@/assets/AnastasiyaMelnik.png";
 import Mariya from "@/assets/Mariya.png";
@@ -23,6 +16,10 @@ import YraGlebov from "@/assets/YraGlebov.png";
 import Yuliya from "@/assets/Yuliya.png";
 import YuliyaLisenko from "@/assets/YuliyaLisenko.png";
 import hart from "@/assets/hart.png";
+import star from "@/assets/star.png"
+import lessons from "@/assets/lessons.png"
+import ua from "@/assets/ua.png"
+
 
 
 export default function Home() {
@@ -30,226 +27,124 @@ export default function Home() {
       <div className={"md:w-96 mx-auto p-5"}>
         <main>
           <header>
-            <div className="text-2xl dark:text-black text-center">
+            <div className="text-2xl dark:text-black text-center mt-5">
               <i>
-                <b>B</b>
-                <small>&</small>
-                <b>M</b>
+                <b className="not-italic">by LANA</b>
+                <small className="not-italic"> & </small>
+                <b className="not-italic">BM Agency</b>
               </i>
             </div>
           </header>
           <section className={"mb-10"}>
             <div className="md:basis-3/6 grow-1 text-center">
-            <span className="text-sm px-5 py-2 text-center normal-case font-light rounded bg-label ">
-              Старт 14 березня
-              </span>
-              <h2 className="text-3xl mt-5 uppercase font-bold mb-10">
-                практикум по запуску міні продуктів на автопілоті 24/7
+              <div className="bg-label rounded p-1 mt-10">
+                <span className="text-18 text-center normal-case font-medium rounded">
+                  Починай навчання у зручний час відразу після оплати
+                </span>
+              </div>
+              <h2 className="uppercase text-f28  mt-5 text-default font-bold">створи та продавай свій міні продукт на автопілоті 24/7</h2>
+              <h2 className="text-f28 uppercase font-bold mb-5">
+                всього за 14 днів
               </h2>
-              <p className="mb-5 dark:text-black md:pr-30">
-                Опануй найпопулярніший та дієвий метод у 2024 р.  залучення клієнтів та продажів 💸
+              <p className="mb-1 dark:text-black md:pr-30 text-f24">
+                Підходить для <span className="font-bold">експертів</span> з будь якої ніші (ІТ, ШІ, Фітнес, Б'юті, Наука і т.д.), спеціалістів, продюсерів, маркетологів
               </p>
-              <p className="mb-5 text-center font-bold">
-                Створюй інфо продукти, марафони і відразу монетизуй їх 👇
-              </p>
-              <ul className="mb-5 text-left">
-                <li>
-                  🔹 без підписників
-                </li>
-                <li>
-                  🔹 без постійного ведення блогу
-                </li>
-                <li>
-                  🔹 без вебінарів
-                </li>
-                <li>
-                  🔹 без залучення команди на постійній основі
-                </li>
-                <li>
-                  🔹 без привʼязки до дати запуску, відразу продажі та видача матеріалу
-                </li>
-              </ul>
-              <p className="text-xl text-default md:text-2xl font-bold uppercase mb-5 max-w-lg text-center">
-                Встигни взяти участь зі знижкою 70%
-              </p>
-              <Link href="#pay">
-                <Button inverted className="w-full">
-                  Взяти участь
-                </Button>
-              </Link>
+
+              <div className="bg-white rounded-lg p-1 mt-4">
+                <p className="mb-5 text-center font-bold text-f24">
+                  Створюй курси, марафони, 
+                  практикуми і відразу монетизуй їх за моєю авторською методикою👇
+                </p>
+                <ul className="mb-5 text-left text-lg">
+                  <li className="my-2">
+                    🔹 без підписників
+                  </li >
+                  <li className="my-2">
+                    🔹 без постійного ведення блогу
+                  </li>
+                  <li className="my-2">
+                    🔹 без вебінарів
+                  </li>
+                  <li className="my-2">
+                    🔹 без залучення команди на постійній основі
+                  </li>
+                  <li className="my-2">
+                    🔹 без привʼязки до дати запуску, відразу продажі та видача матеріалу
+                  </li>
+                  <li className="my-2">✅ навіть коли ти спиш</li>
+                  <li className="my-2">✅ на високі чеки, за рахунок доп. продажів інших продуктів по воронці</li>
+                </ul>
+
+                <p className="text-xl text-default md:text-2xl font-bold uppercase mb-5 max-w-lg text-center">
+                  Встигни взяти участь зі знижкою 70%
+                </p>
+                <Link href="#pay">
+                  <Button inverted className="w-full mb-2">
+                    Взяти участь
+                  </Button>
+                </Link>
+              </div>  
             </div>
           </section>
           <section>
             <div className="md:basis-7/12 flex-initial grow-0 align-bottom dark:text-black">
-              <h2 className="text-3xl mb-10 font-bold uppercase">
+              <h2 className="text-f26 mb-10 font-bold uppercase text-center">
                 Авторка інтенсиву
                 <br />
-                <b className="font-bold text-default">
-                  Product marketing ManageR
+                <b className="font-f26 text-default text-center">
+                  Product ManageR & marketing
                 </b>
               </h2>
               <Image src={pmLanaImage} alt="Lana Sapizhuk" />
-              <ul className="mb-5 list-disc list-inside mt-5">
-                <li><b>7 років</b> роботи <b>в ІТ та Digital</b></li>
-                <li><b>Заснувала</b> діджитал агенство повного циклу <strong className="uppercase">business maker</strong> яка спеціалізується на створенні та монетизації онлайн продуктів  </li>
-                <li><strong>Навчила</strong> більше <strong>60 людей</strong> продукт менеджменту</li>
-                <li><strong>IT блогер:</strong> експертний блог в IG 8к+ аудиторії</li>
-                <li><strong>Працювала</strong> з відомими брендами та <strong>ІТ продуктами:</strong></li>
-              </ul>
-              <div className="grid gap-4 grid-flow-row auto-rows-max mb-10">
-                <Image src={Danone} alt={"Danone"} />
-                <Image src={Kristina} alt={"Kristina"} />
-                <Image src={Elina} alt={"Elina"} />
-                <Image src={Abinbel} alt={"Abinbel"} />
-                <Image src={Wispence} alt={"Wispence"} />
-                <Image src={ActiveChat} alt={"ActiveChat"} />
-                <Image src={MSO} alt={"MSO"} />
+              <div className="bg-labelLight rounded-md py-1 mt-4">
+                <p className="text-center text-xl uppercase font-bold text-default">LANA sapizhuk </p>
               </div>
+              <ul className="mb-5 list-inside mt-5 text-lg">
+
+                <li className="relative flex mb-3">
+                  <div className="flex items-center w-10 h-10"><Image src={star} alt={"Star"} width={10} height={10}></Image></div>  
+                  <div className="w-full"><b>7 р. як PM&M, Запустила ІТ та Інфо продуктів на 1🍋$</b></div>
+                </li>
+
+                <li className="relative flex mb-3">
+                  <div className="flex items-center w-10 h-10"><Image src={star} alt={"Star"} width={10} height={10}></Image></div>  
+                  <div className="w-full"><b>Заснувала</b> Digital агенцію <strong className="uppercase">business maker - </strong> розробка сайтів для бізнесу та експертів & таргетована реклама</div>
+                </li>
+
+                <li className="relative flex mb-3">
+                  <div className="flex items-center w-10 h-10"><Image src={star} alt={"Star"} width={10} height={10}></Image></div>  
+                  <div className="w-full"><strong>Навчила</strong> більше <strong>100 людей</strong> запускам онлайн продуктів</div>
+                </li>
+
+                <li className="relative flex mb-3">
+                  <div className="flex items-center w-10 h-10"><Image src={star} alt={"Star"} width={10} height={10}></Image></div>  
+                  <div><strong>IT блогер:</strong> експертний блог в IG 7к+ аудиторії</div>
+                </li>
+
+                <li className="relative flex mb-3">
+                  <div className="flex items-center w-10 h-10"><Image src={star} alt={"Star"} width={10} height={10}></Image></div>  
+                  <div className="w-full"><strong>Працювала</strong> з відомими брендами, великими блогерами (64к, 609к) та <strong>ІТ продуктами на 200к реєстрацій!</strong></div>
+                </li>
+              </ul>
             </div>
           </section>
           <section className="mb-10 bg-default px-5 py-10">
               <div className="mb-10">
-                <h2 className="text-2xl font-bold uppercase text-white text-center mt-5 mb-5">
-                  Для кого підійде інстенсив?
+                <h2 className="text-2xl font-bold text-white text-center mt-5 mb-5">
+                  👩‍💻 Мій інтенсив - це покроковий шлях від ідеї створення онлайн продукту до запуску продажів  в автоматизованому режимі 24/7 на холодну аудиторію
                 </h2>
-                <p className="text-white text-center text-xl">
-                  Опануйте навички найпопулярнішого методу онлайн продажів у 2024 році для збільшення заробітку та монетизації своїх знань уже через місяць!
+                <p className="text-white text-2xl text-center">
+                  ☝️а також  здобуття нових цільових підписниців безкоштовно!
                 </p>
               </div>
-              <div className="flex flex-col gap-5">
-                <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Для новачків/студентів</h3>
-                  <p>
-                    Хочеш працювати онлайн та допомагати експертам монетизувати їх знання через low продажі, продавати без постійного ведення блогу та прогрівів
-                  </p>
-                </div>
-                <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Для власників онлайн бізнесу</h3>
-                  <p>
-                    Хочеш освоїти популярний метод монетизації та адаптувати його для свого бізнесу, щоб розвинути свій бізнес та збільшити кількість клієнтів
-                  </p>
-                </div>
-                <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Для експертів, які  хочуть монетизувати свої знання блогу</h3>
-                  <p>
-                    Втомився від постійного ведення блогу, прогрівів хочеш робити запуски своїх курсів без постійних сторіс, а через систему продажів, яка принесе результат та дозволить його маштабувати
-                  </p>
-                </div>
-                <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Для тих, хто хоче створити свій онлайн продукт</h3>
-                  <p>
-                    Вже всі продають онлайн продукти, а ти досі не знаєш з чого почати? Моя система допоможе тобі створити свій перший продукт та монетизувати його.
-                  </p>
-                </div>
-              </div>
           </section>
           <section className="mb-10">
-            <h2 className="text-2xl mb-5 font-bold uppercase text-default text-center">
-              Що Ти отримаєш під час навчання
-            </h2>
-            <p className="text-xl font-bold mb-3 text-center">Найпопулярніша робоча схема продажів в 2024! Опануй уже сьогодні</p>
-            <ul className="list-disc list-inside font-bold mb-5">
-              <li>
-                Інструмент, який допоможе тобі генерувати дохід на продажі міні продуктів уже через місяць.
-              </li>
-              <li>
-                А  також лідів, яким в подальшому можна робити допродажі допродажі дорогих продуктів - тим самим ще більше збільшувати свій заробіток.
-              </li>
-            </ul>
-          </section>
-          <section className="mb-10 bg-default px-5 py-10">
-            <div className="mb-10">
-              <h2 className="text-2xl font-bold uppercase text-white text-center mt-5 mb-5">
-                По цій схемі можна продавати різіні міні продукти, лови декілька ІДЕЙ
-              </h2>
-            </div>
-            <div className="flex flex-col gap-5">
-              <div className="grow-1 bg-white rounded-3xl p-5">
-                <strong>
-                  ТОП навички ефективного управління бізнесом
-                </strong>
-              </div>
-              <div className="grow-1 bg-white rounded-3xl p-5">
-                <strong>
-                  Штучний інтелект для ведення блогу
-                </strong>
-              </div>
-              <div className="grow-1 bg-white rounded-3xl p-5">
-                <strong>
-                  Як створювати дизайни за допомогою ШІ
-                </strong>
-              </div>
-              <div className="grow-1 bg-white rounded-3xl p-5">
-                <strong>
-                  Як створювати сайти з допомогою конструкторів
-                </strong>
-              </div>
-              <div className="grow-1 bg-white rounded-3xl p-5">
-                <strong>
-                  Майстер класи по приготуванню продуктів харчування. Наприклад -  Як пекти хліб, макарони, паску та інші
-                </strong>
-              </div>
-              <div className="grow-1 bg-white rounded-3xl p-5">
-                <strong>
-                  Навчальні предмети. Наприклад - Історія України - визначні події
-                </strong>
-              </div>
-              <div className="grow-1 bg-white rounded-3xl p-5">
-                <strong>
-                  Спортивні марафони. Наприклад - Для сідниць, пресу, всього тіла та інші
-                </strong>
-              </div>
-              <div className="grow-1 bg-white rounded-3xl p-5">
-                <strong>
-                  Психологічні курси. Наприклад - Як вийти з токсичних стосунків, як наладити комунікацію з підлітком та інші
-                </strong>
-              </div>
-            </div>
-          </section>
-          <section className="mb-10">
-            <h2 className="text-2xl mb-5 font-bold text-center uppercase text-default">
-              Програма
-            </h2>
             <div>
-              <ol className="list-decimal list-inside leading-10">
-                <li>
-                  Вступ в low продажі
-                </li>
-                <li>
-                  Що дозволяє low продажам працюювати?
-                </li>
-                <li>
-                  Як виглядають low продажі зсередини?
-                </li>
-                <li>
-                  Як обрати тематику курсу та два варіанта створення міні продукта: від експерта і для експерта
-                </li>
-                <li>
-                  Як зробити структуру  міні продукта
-                </li>
-                <li>
-                  Як створити програму курсу, марафону для міні продукта
-                </li>
-                <li>
-                  Розбір структури лендінгу для міні продукта
-                </li>
-                <li>
-                  Ідеї для  допродажів інших продуктів, після покупки міні продукта
-                </li>
-                <li>
-                  Майстер клас - Як зробили лендінг через конструктор для продажі міні продукта - огляд популярних конструкторів
-                </li>
-                <li>
-                  Майстер клас - Як налаштувати платіжну систему Wayforpay та підключити оплати до лендінгу
-                </li>
-                <li>
-                  Майстер клас - Як налаштувати бот в TG для видачі матеріалів міні продукта
-                </li>
-                <li>
-                  Супровід куратора протягом всього інтенсиву
-                </li>
-              </ol>
+              <Image src={lessons} alt="Lessons" className="rounded-b-lg"></Image>
             </div>
+            <h2 className="text-2xl mb-5 font-bold mt-8 w-70% text-center px-10">
+              Приєднуйтесь до інтенсиву вже зараз за спеціальною, обмеженою у часі пропозицією 
+            </h2>
           </section>
           <section className="mb-10" id="pay">
             <div className="text-center rounded-2xl bg-default p-5 flex flex-col items-center mb-5">
@@ -258,38 +153,47 @@ export default function Home() {
                   className={"text-5xl font-extrabold mb-5"}
                   startDate={new Date("02-20-2024")} format={["days", "hours", "minutes", "seconds"]}
               />
-              <p className={"text-white text-xl"}><s>$200</s></p>
-              <p className={"font-bold text-white text-3xl uppercase mb-10"}>$49</p>
-              <Link href={"https://secure.wayforpay.com/button/bc87e6fda40c2"}>
-                <Button className={"w-full"}>
-                  Приєднатися
+              <div className="flex flex-end items-center my-5">
+                <p className={"text-white text-xl mr-3"}><s>36 $</s></p>
+                <p className={"font-bold text-white text-4xl uppercase"}>9 $</p>
+              </div>
+              <Link href={"/buy"}>
+                <Button className={"w-full px-10"}>
+                  Придбати  
                 </Button>
               </Link>
             </div>
             <div className={"bg-white rounded-3xl p-5 text-center"}>
-              <p className={"mb-5"}>
-                🎁 При покупці інтенсиву сьогодні ти отримаєш файл з рекомендаціями щодо створення креативів, а також детальну інструкцію по налаштуванню таргету (підійте новачкам) у подарунок 🎁
+              <p className={"mb-5 text-2xl font-bold"}>
+              При покупці інтенсиву ти отримаєш 2 крутезних бонуса від моєї команди у подарунок 🎁
               </p>
-              <p className={"mb-5 text-xl font-bold"}>
-                Тобто все разом коштує <br/>
-                <s>$300</s>
+              <ul className="text-left">
+                <li>1. Детальну інструкцію по налаштуванню таргету з нашими авторськими рекоментаціями.</li>
+                <li>2. Детальну інструкцію по створенню креативів, які привертають увагу та продають! </li>
+              </ul>
+              <p className={"mb-5 text-xl text-2xl uppercase mt-4 font-bold"}>
+                все разом коштує <br/>
+                <s>49 $</s>
               </p>
-              <p className={"mb-5 text-xl font-bold"}>
+              <p className={"mb-5 text-2xl font-bold text-default uppercase"}>
                 Але зараз:
-                <br/>
-                $49
+                <span className="text-3xl"><br/></span>
+                9 $
               </p>
-              <Link href={"https://secure.wayforpay.com/button/bc87e6fda40c2"}>
+              <Link href={"/buy"}>
                 <Button className={"w-full"}>
-                  Приєднатися
+                     Придбати   
                 </Button>
               </Link>
             </div>
           </section>
           <section className="mb-10">
-            <h2 className="text-2xl mb-10 font-extrabold uppercase">
-              Відгуки<br />
-              студентів{" "}
+            <div className="flex items-center mb-10">
+              <Image src={ua} alt="Flag"></Image>
+              <p className="text-center text-xl uppercase italic font-bold">Освічені <span className="not-italic">значить</span> вільні </p>
+            </div>
+            <h2 className="text-2xl mb-8 font-extrabold uppercase text-center">
+              ВІДГУКИ та КЕЙСИ СТУДЕНТІВ{" "}
               <span style={{ color: "#A699FF" }} className="pr-3">
               Лани
             </span>
@@ -571,7 +475,7 @@ export default function Home() {
               </article>
             </div>
           </section>
-        </main>
-      </div>
+      </main>
+    </div>
   );
 }

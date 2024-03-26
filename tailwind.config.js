@@ -13,11 +13,19 @@ module.exports = {
       },
       backgroundColor: {
         default: "#ACA0FE",
-        label: "rgba(167, 153, 255, 0.4)"
+        label: "rgba(167, 153, 255, 0.4)",
+        labelLight: "rgba(166, 153, 255, 0.4)",
+        grey: "rgba(0, 0, 0, 0.4)",
+        black1: "rgba(0, 0, 0, 1)"
+      },
+      fontSize: {
+        f28: "28px",
+        f24: "24px",
+        f26: "26px"
       },
       backgroundImage: {
         "gradient": "linear-gradient(270deg, #E2DFF6 0.03%, #A699FF 99.97%)",
-        "gradient-white": "linear-gradient(270deg, rgba(255, 255, 255, 0.00) -16.38%, #FFF 49.79%, rgba(255, 255, 255, 0.00) 108.75%)",
+        "gradient-light": "linear-gradient(270deg, #E2DFF6 151.03%, #A699FF 299.97%)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
